@@ -1,5 +1,5 @@
 import { Typography } from "@material-ui/core";
-import BaseLayout from "../../BaseLayout";
+import BaseLayout from "../../ds/BaseLayout";
 
 export default function HomePage() {
   return (
