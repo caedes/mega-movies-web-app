@@ -9,6 +9,8 @@ export const variants = {
   current: "current",
 };
 
+export { default as useVariantLocation } from "./useVariantLocation";
+
 export default function MenuItem({
   children,
   startIcon,

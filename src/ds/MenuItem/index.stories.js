@@ -1,7 +1,7 @@
 import { AppBar, Toolbar } from "@material-ui/core";
 import { HomeOutlined } from "@material-ui/icons";
 
-import MenuItem from "./";
+import MenuItem, { variants } from "./";
 
 export default {
   component: MenuItem,
@@ -26,7 +26,7 @@ export const WithIcon = () => (
 );
 
 export const WithCurrentVariant = () => (
-  <MenuItem to="/" startIcon={<HomeOutlined />} variant="current">
+  <MenuItem to="/" startIcon={<HomeOutlined />} variant={variants.current}>
     Menu 1
   </MenuItem>
 );
