@@ -1,10 +1,10 @@
-import { Typography } from "@material-ui/core";
 import BaseLayout from "../../ds/BaseLayout";
+import MovieCard from "../../ds/MovieCard";
 
 export default function HomePage() {
   return (
     <BaseLayout>
-      <Typography>C'est la page d'accueil</Typography>
+      <MovieCard title="Titanic" id={12} />
     </BaseLayout>
   );
 }

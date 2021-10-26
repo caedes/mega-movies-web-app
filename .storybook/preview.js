@@ -1,9 +1,11 @@
 import { ThemeProvider } from "@material-ui/core/styles";
+import { CssBaseline } from "@material-ui/core";
 import { BrowserRouter } from "react-router-dom";
 
 import theme from "../src/ds/theme";
 
 export const parameters = {
+  layout: "fullscreen",
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
@@ -21,6 +23,7 @@ export const decorators = [
   ),
   (Story) => (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Story />
     </ThemeProvider>
   ),
