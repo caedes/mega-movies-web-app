@@ -1,15 +1,26 @@
-import { node, string } from "prop-types";
+import { node, oneOf, string } from "prop-types";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 import useStyles from "./useStyles";
 
-export default function MenuItem({ children, startIcon, to }) {
-  const classes = useStyles();
+export const variants = {
+  default: "default",
+  current: "current",
+};
+
+export default function MenuItem({
+  children,
+  startIcon,
+  to,
+  variant = variants.default,
+}) {
+  const classes = useStyles({ variant });
 
   return (
     <Button
       color="inherit"
+      className={classes.current}
       classes={{ root: classes.root }}
       startIcon={startIcon}
       component={Link}
@@ -23,5 +34,6 @@ export default function MenuItem({ children, startIcon, to }) {
 MenuItem.propTypes = {
   children: node,
   startIcon: node,
-  to: string,
+  to: string.isRequired,
+  variant: oneOf(Object.values(variants)),
 };
