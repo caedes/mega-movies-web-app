@@ -83,6 +83,7 @@
     "msw": "^0.35.0",
     "prettier": "^2.4.1",
     "prettier-plugin-packagejson": "^2.2.13",
+    "query-string": "^7.0.1",
     "sb": "^6.3.12"
   },
   "msw": {
