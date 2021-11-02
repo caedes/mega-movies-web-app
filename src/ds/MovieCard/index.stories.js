@@ -1,3 +1,4 @@
+import { BrowserRouterContext } from "../../testHelpers";
 import MovieCard from ".";
 
 export default {
@@ -5,14 +6,17 @@ export default {
   title: "Design System/Molecule/MovieCard",
 };
 
-export const Default = () => <MovieCard title="Titanic" id="12" />;
-
-export const WithImage = () => (
-  <MovieCard
-    title="Titanic"
-    id="12"
-    image="https://api.lorem.space/image/movie?w=350&h=210"
-  />
+const Template = (args) => (
+  <BrowserRouterContext>
+    <MovieCard {...args} />
+  </BrowserRouterContext>
 );
 
-export const WithRoute = () => <MovieCard title="Titanic" id="12" />;
+export const Default = Template.bind({});
+Default.args = { title: "Titanic", id: "12" };
+
+export const WithImage = Template.bind({});
+WithImage.args = {
+  ...Default.args,
+  image: "https://api.lorem.space/image/movie?w=350&h=210",
+};

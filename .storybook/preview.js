@@ -1,8 +1,10 @@
 import { ThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
-import { BrowserRouter } from "react-router-dom";
 
+import { worker } from "../src/mocks/browser";
 import theme from "../src/ds/theme";
+
+worker.start();
 
 export const parameters = {
   layout: "fullscreen",
@@ -16,11 +18,6 @@ export const parameters = {
 };
 
 export const decorators = [
-  (Story) => (
-    <BrowserRouter>
-      <Story />
-    </BrowserRouter>
-  ),
   (Story) => (
     <ThemeProvider theme={theme}>
       <CssBaseline />

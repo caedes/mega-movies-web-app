@@ -1,5 +1,6 @@
 import { AppBar, Toolbar } from "@material-ui/core";
 import { HomeOutlined } from "@material-ui/icons";
+import { BrowserRouterContext } from "../../testHelpers";
 
 import MenuItem, { variants } from "./";
 
@@ -17,16 +18,17 @@ export default {
   ],
 };
 
-export const Default = () => <MenuItem to="/">Menu 1</MenuItem>;
-
-export const WithIcon = () => (
-  <MenuItem to="/" startIcon={<HomeOutlined />}>
-    Menu 1
-  </MenuItem>
+const Template = ({ children, ...props }) => (
+  <BrowserRouterContext>
+    <MenuItem {...props}>{children}</MenuItem>
+  </BrowserRouterContext>
 );
 
-export const WithCurrentVariant = () => (
-  <MenuItem to="/" startIcon={<HomeOutlined />} variant={variants.current}>
-    Menu 1
-  </MenuItem>
-);
+export const Default = Template.bind({});
+Default.args = { to: "/", children: "Menu 1" };
+
+export const WithIcon = Template.bind({});
+WithIcon.args = { ...Default.args, startIcon: <HomeOutlined /> };
+
+export const WithCurrentVariant = Template.bind({});
+WithCurrentVariant.args = { ...WithIcon.args, variant: variants.current };

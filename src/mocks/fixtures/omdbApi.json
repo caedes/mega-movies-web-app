@@ -1,0 +1,76 @@
+{
+  "Search": [
+    {
+      "Title": "GThe ABC Murders",
+      "Year": "2018",
+      "imdbID": "tt8463714",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmJmNzU0NTgtOGM5Ni00MWJiLTgwZmMtNDIyNjYzZDAzNzI5XkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC Afterschool Specials",
+      "Year": "1972–1997",
+      "imdbID": "tt0202179",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTY2MmRiZjQtM2MyMC00MDViLThhMjUtYzZiN2JkYzA4NDE5XkEyXkFqcGdeQXVyMTY2MzYyNzA@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC Africa",
+      "Year": "2001",
+      "imdbID": "tt0281534",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTU5ODc1ODc2Ml5BMl5BanBnXkFtZTcwMzEyOTgyMQ@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC TGIF",
+      "Year": "1989–2018",
+      "imdbID": "tt0312324",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDY2M2MyZTEtYmZlZi00NTUyLWE4MWItNDg3YmIzY2VjZWYyXkEyXkFqcGdeQXVyMTEwODg2MDY@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC News Nightline",
+      "Year": "1980–",
+      "imdbID": "tt0154053",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYTNiODgzYWItYmYyNi00NDk1LWEzOGUtNjUyZjg3NmU5YTJhXkEyXkFqcGdeQXVyODg3NDc1OTE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC Evening News",
+      "Year": "1953–",
+      "imdbID": "tt0184090",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2Y3Mjg3YmUtNGZjMy00YjM0LWExZmEtNTFiODdhNzYzOTUzXkEyXkFqcGdeQXVyODg3NDc1OTE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC Weekend Specials",
+      "Year": "1977–1995",
+      "imdbID": "tt0075471",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNjllM2ViM2MtNTJkYi00YjZhLTkyMjEtMzBkZWU1OGQzYTA0XkEyXkFqcGdeQXVyMTg2NjYzOA@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GGarotas do ABC",
+      "Year": "2003",
+      "imdbID": "tt0327451",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjdkMTkyMTMtMmU1MC00MDYyLWEwMWUtMDdiYzYwNmI0ZjZiXkEyXkFqcGdeQXVyMTU2ODc4ODQ@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GABC da Greve",
+      "Year": "1990",
+      "imdbID": "tt0317051",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDMxN2FjMjAtNTQ4YS00MWE0LWIzMjktZjc0YTUxOTc5YWFkXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "GThe ABC of Love and Sex: Australia Style",
+      "Year": "1978",
+      "imdbID": "tt0077116",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjQyNzM5ODEtYmU0OC00OTRhLWI1ZTQtNzBkZWQwZjg4MmQzXkEyXkFqcGdeQXVyNjU1MTEwMjI@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "319",
+  "Response": "True"
+}
