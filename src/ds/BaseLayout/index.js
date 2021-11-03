@@ -1,13 +1,24 @@
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Button, Toolbar, Typography } from "@material-ui/core";
 import { HomeOutlined, ListOutlined, SearchOutlined } from "@material-ui/icons";
 import { node } from "prop-types";
+import React from "react";
 
 import { homePath, myListPath, searchPath } from "../../routes";
 import MenuItem, { useVariantLocation } from "../MenuItem";
 import Separator from "../Separator";
+import { UserContext } from "../../contexts";
+import { fetchUser } from "../../dataProvider";
 
 export default function BaseLayout({ children }) {
   const { variantPath } = useVariantLocation();
+  const { user, setUser } = UserContext.useContext();
+
+  const logout = () => setUser(null);
+
+  const login = async () => {
+    const user = await fetchUser();
+    setUser(user);
+  };
 
   return (
     <>
@@ -36,7 +47,15 @@ export default function BaseLayout({ children }) {
             Ma liste
           </MenuItem>
           <Separator />
-          <MenuItem to="/login">Login</MenuItem>
+          {user ? (
+            <Button color="inherit" onClick={logout}>
+              Logout
+            </Button>
+          ) : (
+            <Button color="inherit" onClick={login}>
+              Login
+            </Button>
+          )}
         </Toolbar>
       </AppBar>
       {children}
